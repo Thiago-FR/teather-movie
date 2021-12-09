@@ -1,5 +1,4 @@
 import React from 'react';
-import { v4 as generateId } from 'uuid';
 
 const line = 10;
 const column = 10;
@@ -114,13 +113,14 @@ class TheaterBoard extends React.Component {
           {
           [...Array(line)].map((eachLine, row) => {
             return(
-              <div className="chair-container">
+              <div className="chair-container" key={`${eachLine}-${row}`}>
                 <span className="row-identifier">{ String.fromCharCode((row + 1) + 64) }</span>
                 {
                   [...Array(column)].map((eachColumn, armchair) => {
                     return(
                       <div
                         id={`${row.toString()}-${armchair.toString()}`}
+                        key={`${eachLine}-${row}-${armchair}`}
                         className="chair"
                         onClick={ (event) => this.selectChair(event, row, armchair) }
                       >
