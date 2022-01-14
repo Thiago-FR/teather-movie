@@ -14,3 +14,7 @@ Crie uma aplicação, utilizando uma linguagem de programação de sua escolha, 
 * Mostrar o total de lugares confirmados
 * Mostrar o total de lugares disponíveis
 * Utilize todos os recursos necessários para que a aplicação seja de fácil utilização para o usuário.
+
+## Protótipo <a name="prototipo"></a>
+
+![Protótipo](/theater-movie.gif)
